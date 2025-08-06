@@ -1,27 +1,46 @@
 # IntelliJ IDEA
 .idea/
 *.iml
-workspace.xml
+*.ipr
+*.iws
 shelf/
+workspace.xml
 
 # Maven
 target/
 mavenHomeManager.xml
+*.mvn/
+
+# Gradle (caso use)
+.gradle/
+build/
 
 # Datasources
 dataSources/
 dataSources.local.xml
 
-# Spring Boot config sensível
-src/main/resources/application.yml
-
 # Requisições HTTP salvas
 httpRequests/
 
-# Logs
-*.log
+# Spring Boot - Arquivos de configuração sensíveis
+src/main/resources/application.yml
+src/main/resources/application-*.yml
 
-# Arquivos de ambiente
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Arquivos de ambiente e segredos
 .env
 *.secret
 *.key
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de testes
+coverage/
+*.lcov
